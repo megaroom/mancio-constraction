@@ -20,6 +20,11 @@
   <!-- <link rel="preload" href="fonts/placeholder.woff2" as="font" crossorigin="anonymous"> -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+  <script> 
+              new WOW().init(); 
+              </script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </head>
 
@@ -215,10 +220,10 @@
           <div class="row">
             <div class="col-11 col-sm-10 col-md-8 col-xxl-8">
               <div class="first-screen__text">
-                <h1 data-scroll>
+                <h1 data-scroll class="wow animate__animated animate__fadeIn" data-wow-duration="4s">
                   <b data-scroll>Построим загородный дом</b> по&nbsp;индивидуальному проекту от&nbsp;<span>7&nbsp;000&nbsp;000</span> рублей&nbsp;<sup>*</sup>
                 </h1>
-                <ul class="subtitle pre-loader">
+                <ul class="subtitle pre-loader wow animate__animated animate__fadeInUp">
                   <li>*</li>
                   <li>П</li>
                   <li>р</li>
@@ -279,28 +284,29 @@
                   <li>н</li>
                   <li>о</li>
                 </ul>
-                <ul>
-                  <li>
+                <ul >
+                  <li class="wow animate__animated animate__fadeInLeft" data-wow-delay="0.4s">
                     <svg width="37.7" height="30">
                       <use xlink:href="#home"></use>
                     </svg>
                     <span>Самые теплые, класса&nbsp;А++, и&nbsp;экологичные строительные
                       материалы</span>
                   </li>
-                  <li>
+                  <li class="wow animate__animated animate__fadeInLeft" data-wow-delay="0.2s">
                     <svg width="25.25" height="30">
                       <use xlink:href="#compass"></use>
                     </svg>
                     <span>Строгое соблюдение технологий строительства</span>
                   </li>
-                  <li>
+                  <li class="wow animate__animated animate__fadeInLeft" data-wow-delay="0s">
                     <svg width="30" height="30">
                       <use xlink:href="#doc"></use>
                     </svg>
                     <span>Гарантия до 15 лет</span>
                   </li>
                 </ul>
-                <button class="btn btn--large btn--animation-heartbeat" type="button" onclick="Marquiz.showModal('61e7e2f4f9a6ed003fc167e9')">
+                <div class="wow animate__animated animate__fadeInUp" data-wow-delay="0.4s">
+                <button class="btn btn--large btn--animation-heartbeat"  type="button" onclick="Marquiz.showModal('61e7e2f4f9a6ed003fc167e9')">
                   Рассчитать стоимость <i> и получить подарок</i>
                   <span>
                     <svg width="15" height="15">
@@ -308,7 +314,8 @@
                     </svg>
                   </span>
                 </button>
-                <p class="text-under-button">
+              </div>
+                <p class="text-under-button wow animate__animated animate__fadeInUp" data-wow-delay="0.4s"">
                   <svg width="39" height="39">
                     <use xlink:href="#chat"></use>
                   </svg>
@@ -327,7 +334,7 @@
         <div class="container">
           <div class="row">
             <div class="gallery__col  col-12 col-md-6">
-              <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+              <div id="carouselExampleIndicators" class="carousel slide  wow animate__animated animate__fadeInLeft" data-bs-ride="carousel">
                 <div class="carousel-indicators">
                   <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                   <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -384,7 +391,7 @@
               </div>
             </div>
             <div class="gallery__col  col-12 col-md-6">
-              <div id="carousel2" class="carousel slide" data-bs-ride="carousel">
+              <div id="carousel2" class="carousel slide wow animate__animated animate__fadeInRight" data-bs-ride="carousel">
                 <div class="carousel-indicators">
                   <button type="button" data-bs-target="#carousel2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                   <button type="button" data-bs-target="#carousel2" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -441,7 +448,7 @@
               </div>
             </div>
             <div class="gallery__col  col-12 col-md-6">
-              <div id="carousel3" class="carousel slide" data-bs-ride="carousel">
+              <div id="carousel3" class="carousel slide wow animate__animated animate__fadeInLeft" data-bs-ride="carousel">
                 <div class="carousel-indicators">
                   <button type="button" data-bs-target="#carousel3" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                   <button type="button" data-bs-target="#carousel3" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -499,7 +506,7 @@
               </div>
             </div>
             <div class="gallery__col  col-12 col-md-6">
-              <div id="carousel4" class="carousel slide" data-bs-ride="carousel">
+              <div id="carousel4" class="carousel slide wow animate__animated animate__fadeInRight" data-bs-ride="carousel">
                 <div class="carousel-indicators">
                   <button type="button" data-bs-target="#carousel4" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                   <button type="button" data-bs-target="#carousel4" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -563,8 +570,8 @@
         <div class="container">
           <div class="row">
             <div class="col-md-12 mx-auto">
-              <h2 data-scroll>В&nbsp;вашем доме будет <span>тепло, комфортно и&nbsp;безопасно!</span></h2>
-              <p class="subtitle" data-scroll>В&nbsp;строительстве используем современные технологии надежные материалы</p>
+              <h2 data-scroll class="wow animate__animated animate__fadeInUp">В&nbsp;вашем доме будет <span>тепло, комфортно и&nbsp;безопасно!</span></h2>
+              <p class="subtitle wow animate__animated animate__fadeInUp" data-wow-delay="0.4s"">В&nbsp;строительстве используем современные технологии надежные материалы</p>
               <div data-marquiz-id="61e7e2f4f9a6ed003fc167e9"></div>
               <script>
                 (function(t, p) {
